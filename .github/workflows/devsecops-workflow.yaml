@@ -12,7 +12,7 @@ jobs:
         node-version: 16
         cache: npm
     - run: npm install
-    - #name: SonarCloud Scan
+   # - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
